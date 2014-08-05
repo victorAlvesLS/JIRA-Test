@@ -1,0 +1,50 @@
+# IGNORA ARQUIVOS CRIADOS TEMPORARIAMENTE
+*~
+*swo
+
+# REMOCAO DE ARQUIVOS DESNECESSARIOS DO DIRETORIO BUILDS
+!Builds/
+Builds/*
+!Builds/LawOfficeLogJob*
+!Builds/Components/
+!Builds/Components/*
+!Builds/Framework/
+!Builds/Framework/*
+!Builds/SAP/
+!Builds/SAP/*
+!Builds/Services/
+!Builds/Services/*
+!Builds/Updater/
+!Builds/Updater/*
+
+# IGNORA DEBUG-SIMBOLS
+*.pdb
+
+# IGNORA ARQUIVOS DE SOLUTION
+*.suo
+
+# IGNORA ARQUIVOS ESPECIFICOS DE USUARIO 
+kssh*
+ssh*
+*.tmp
+*.user
+*.swp
+*.sln
+
+# IGNORA ARQUIVOS CRIADOS DURANTE A COMPILACAO
+#*.csproj Nao podemos ignorar arquivos [csproj] pois sao os projetos em si.
+LawOfficeService/dlCache/*
+
+# IGNORA OS DIRETÓRIO [BIN] E [OBJ] QUE SAO ESPECIFICOS DE CADA COMPUTADOR
+bin
+obj
+*.bak
+# IGNORA ARQUIVOS DO SOURCE-SAFE
+*.scc
+*.vspscc
+*.bak
+*.org
+
+# IGNORA O [Web.config] PARA NAO SOBRESCREVER AS CONEXOES DE BANCOS DE DADOS DE CADA DESENVOLVEDOR
+LawOfficeService/Web.config
+*.orig
